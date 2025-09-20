@@ -1,0 +1,1064 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.explore{
+            width: 100%;
+            height: 48px;
+            background-color: #DDF0A7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            p{
+                font-family: "Space Grotesk";
+                font-size: 15px;
+                color: #162E3C;
+            }
+
+            .close{
+                position: relative;
+                left: 535px;
+                cursor: pointer;
+            }
+}
+
+header{
+    width: 100%;
+    height: 1345px;
+
+    nav{
+        width: 100%;
+        height: 72px;
+
+        .nav{
+            width: 100%;
+            height: 72px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .nav_workspace{
+                width: 1280px;
+                height: 44px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                img{
+                    cursor: pointer;
+                }
+                
+                .nav_buttons{
+                    width: 581px;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+
+                    a{
+                        font-family: "Space Grotesk";
+                        font-size: 15px;
+                        text-decoration: none;
+                        color: #162E3C;
+                        margin-left: 30px;
+                    }
+
+                    .a1{
+                        margin-left: 32px;
+                    }
+
+                    
+
+                    .log_button{
+                        width: 91px;
+                        height: 100%;
+                        background: none;
+                        border: 2px solid #162E3C;
+                        border-radius: 64px;
+                        font-family: "Space Grotesk";
+                        font-size: 16px;
+                        color: #162E3C;
+                        margin-left: 16px;
+                        cursor: pointer;
+                    }
+
+                    .try_button{
+                        border: none;
+                        background-color: #162E3C;
+                        border-radius: 64px;
+                        width: 130px;
+                        height: 100%;
+                        color: white;
+                        font-family: "Space Grotesk";
+                        font-size: 15px;
+                        margin-left: 8px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+    .div_with_draw{
+        width: 100%;
+        height: 633px;
+        background-color: #162E3C;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .absolute_scam{
+            width: 100%;
+            height: 633px;
+            position: absolute;
+            overflow: hidden;
+            z-index: 1;
+
+            img:nth-of-type(1){
+                position: absolute;
+                top: 100px;
+            }
+
+            img:nth-of-type(2){
+                position: absolute;
+                top: 260px;
+                left: 91.3%;
+            }
+
+            img:nth-of-type(3){
+                position: absolute;
+                top: 518px;
+            }
+        }
+
+        .base_info{
+           width: 768px;
+           height: 433px;
+           z-index: 3;
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+
+           p:nth-of-type(1){
+            font-family: "Fraunces";
+            color: white;
+            font-size: 56px;
+            font-weight: bold;
+            text-align: center;              
+           }
+
+           p:nth-of-type(2){
+            font-family: "Space Grotesk";
+            color: white;
+            font-size: 20px;
+            text-align: center;
+            margin-top: 26px;
+           }
+
+           .base_button_space{
+            width: 100%;
+            height: 52px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 32px;
+            margin-top: 38px;
+            
+
+            button:nth-of-type(1){
+                width: 139px;
+                height: 100%;
+                background-color: #DDF0A7;
+                border: none;
+                border-radius: 64px;
+                font-family: "Space Grotesk";
+                color: #162E3C;
+                font-weight: bold;
+                font-size: 15px;
+                cursor: pointer;
+            }
+
+            button:nth-of-type(2){
+                width: 110px;
+                height: 19px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-family: "Space Grotesk";
+                font-size: 15px;
+                font-weight: bold;
+                border: none;
+                color: white;
+                cursor: pointer;
+                background: none;
+            }
+           }
+
+           .base_4_logo{
+            width: 630px;
+            height: 31px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 62px;
+           }
+        }
+    }
+
+    .watch_introduction{
+        width: 100%;
+        height: 640px;
+        display: flex;
+        justify-content: center;
+
+        .wi_line{
+            width: 100%;
+            height: 50%;
+            background-color: #162E3C;
+        }
+
+        .introduction_itself{
+            width: 1280px;
+            height: 640px;
+            position: absolute;
+            background-image: url(../../assets/introduction.png);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            >button{
+                width: 233px;
+                height: 52px;
+                background-color: #DDF0A7;
+                border: none;
+                border-radius: 64px;
+                font-family: "Space Grotesk";
+                font-weight: bold;
+                font-size: 15px;
+                color: #162E3C;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.Faster_Than_Ever{
+    width: 100%;
+    height: 856px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .B4{
+        position: absolute;
+        left: 94%;
+        top: 1475px;
+    }
+
+    .FTE_workspace{
+        width: 1280px;
+        height: 600px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .FTE_photo{
+            width: 648px;
+            height: 100%;
+            background-image: url(../../assets/fast_photo.png);
+            background-repeat: no-repeat;
+
+            .FTE_green_div{
+                width: 420px;
+                height: 120px;
+                background-color: #DDF0A7;
+                border-radius: 24px;
+                margin-top: 432px;
+                margin-left: 228px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .FTE_GD_workspace{
+                    width: 372px;
+                    height: 72px;
+                    display: flex;
+                    justify-content: space-between;
+                    
+                    >div{
+                        p:nth-of-type(1){
+                            font-family: "Fraunces";
+                            font-size: 32px;
+                            font-weight: bold;
+                            color: #162E3C;
+                        }
+                        p:nth-of-type(2){
+                            font-family: "Space Grotesk";
+                            font-size: 20px;
+                            color: #162E3C;
+                        }
+                    }
+                }
+            }
+        }
+
+        .FTE_info{
+            width: 600px;
+            height: 304px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .FTE_i1{
+                width: 72px;
+                height: 32px;
+                background-color: #DDF0A7;
+                border-radius: 64px;
+                font-family: "Space Grotesk";
+                font-weight: bold;
+                font-size: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #162E3C;
+            }
+            
+            .FTE_i2{
+                font-size: 40px;
+                font-family: "Fraunces";
+                color: #162E3C;
+            }
+
+            .FTE_i3{
+                font-family: "Space Grotesk";
+                font-size: 18px;
+                color: #49616E;
+            }
+
+            >div{
+                width: 265px;
+                height: 52px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                button:nth-of-type(1){
+                    width: 139px;
+                    height: 52px;
+                    background: none;
+                    border-radius: 64px;
+                    border: #162E3C solid 2px;
+                    font-family: "Space Grotesk";
+                    color: #162E3C;
+                    font-size: 15px;
+                    cursor: pointer;
+                }
+
+                button:nth-of-type(2){
+                    width: 110px;
+                    height: 19px;
+                    border: none;
+                    background: none;
+                    font-family: "Space Grotesk";
+                    font-size: 15px;
+                    color: #162E3C;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.Build_Your_Startup{
+    width: 100%;
+    height: 898px;
+    display: flex;
+    justify-content: center;
+
+    .BYS_workspace{
+        width: 1280px;
+        height: 100%;
+        background-color: #DDF0A7;
+        border-radius: 48px;
+
+        .B5{
+            position: relative;
+            left: 1068px;
+        }
+
+        .BYS_info{
+            width: 1152px;
+            height: 642px;
+            margin: 0 auto;
+            position: relative;
+            bottom: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+
+            .BYS_I1{
+                font-family: "Fraunces";
+                font-size: 40px;
+                color: #162E3C;
+                text-align: center;
+                width: 704px;
+            }
+
+            .BYS_I2{
+                width: 744px;
+                font-family: "Space Grotesk";
+                font-size: 18px;
+                color: #162E3C;
+                text-align: center;
+            }
+
+            .BYS_3div{
+                width: 100%;
+                height: 304px;
+                display: flex;
+                justify-content: space-between;
+
+                >div{
+                    width: 363px;
+                    height: 100%;
+                    background-color: #162E3C;
+                    border-radius: 24px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    >div{
+                        width: 255px;
+                        height: 241px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        p:nth-of-type(1){
+                           font-size: 20px;
+                           font-family: "Fraunces";
+                           color: white; 
+                        }
+
+                        p:nth-of-type(2){
+                            font-family: "Space Grotesk";
+                            font-size: 15px;
+                            color: white;
+                            text-align: center;
+                        }
+                    }
+                }
+
+
+            }
+
+            .BYS_2buttons{
+                width: 265px;
+                height: 52px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                button:nth-of-type(1){
+                    width: 139px;
+                    height: 52px;
+                    background: none;
+                    border-radius: 64px;
+                    border: #162E3C solid 2px;
+                    font-family: "Space Grotesk";
+                    color: #162E3C;
+                    font-size: 15px;
+                    cursor: pointer;
+                }
+
+                button:nth-of-type(2){
+                    width: 110px;
+                    height: 19px;
+                    border: none;
+                    background: none;
+                    font-family: "Space Grotesk";
+                    font-size: 15px;
+                    color: #162E3C;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.Straight{
+    width: 100%;
+    height: 856px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .S_workspace{
+        width: 1280px;
+        height: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .S_div1{
+            width: 600px;
+            height: 486px;
+            // background-color: blanchedalmond;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            >p:nth-of-type(1){
+                width: 88px;
+                height: 32px;
+                border-radius: 64px;
+                background-color: #DDF0A7;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: "Space Grotesk";
+                font-size: 15px;
+                font-weight: bold;
+                color: #162E3C;
+            }
+
+            >p:nth-of-type(2){
+                font-family: "Fraunces";
+                font-size: 40px;
+                color: #162E3C;
+            }
+
+            >p:nth-of-type(3){
+                font-family: "Space Grotesk";
+                font-size: 18px;
+                color: #49616E;
+                width: 574px;
+            }
+
+            .S_D1_2divs{
+                width: 100%;
+                height: 204px;
+                display: flex;
+                justify-content: space-between;
+
+                >div{
+                    width: 286px;
+                    height: 189px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: start;
+
+                    p:nth-of-type(1){
+                        font-family: "Fraunces";
+                        font-size: 20px;
+                        color: #162E3C;
+                    }
+
+                    p:nth-of-type(2){
+                        font-family: "Space Grotesk";
+                        font-size: 16px;
+                        color: #49616E;
+                    }
+                }
+            }
+
+            .S_2buttons{
+                 width: 265px;
+                height: 52px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                button:nth-of-type(1){
+                    width: 139px;
+                    height: 52px;
+                    background: none;
+                    border-radius: 64px;
+                    border: #162E3C solid 2px;
+                    font-family: "Space Grotesk";
+                    color: #162E3C;
+                    font-size: 15px;
+                    cursor: pointer;
+                }
+
+                button:nth-of-type(2){
+                    width: 110px;
+                    height: 19px;
+                    border: none;
+                    background: none;
+                    font-family: "Space Grotesk";
+                    font-size: 15px;
+                    color: #162E3C;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .S_div2{
+            width: 648px;
+            height: 100%;
+            background-image: url(../../assets/Straight_photo.png);
+            background-repeat: no-repeat;
+            background-position: right;
+
+            .S_D2_greendiv{
+                width: 420px;
+                height: 120px;
+                background-color: #DDF0A7;
+                border-radius: 24px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 432px;
+
+                >div{
+                    width: 372px;
+                    height: 72px;
+                    display: flex;
+                    justify-content: space-between;
+
+                    >div{
+                        p:nth-of-type(1){
+                            font-family: Fraunces;
+                            font-size: 32px;
+                            color: #162E3C;
+                        }
+
+                        p:nth-of-type(2){
+                            font-family: "Space Grotesk";
+                            font-size: 20px;
+                            color: #162E3C;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.Worm_From_Sponsor{
+    width: 100%;
+    height: 1404px;
+    background-color: #162E3C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .WFScam{
+        width: 100%;
+        height: 1404px;
+        position: absolute;
+
+        >img:nth-of-type(1){
+            position: relative;
+            top: -126px;
+            left: 86%;
+        }
+
+        >img:nth-of-type(2){
+            position: relative;
+            left: -280px;
+            top: 1036px;
+        }
+    }
+
+    .WFS_Delayed{
+        width: 1280px;
+        height: 1110px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p:nth-of-type(1){
+            color: white;
+            font-size: 48px;
+            font-family: "Fraunces";
+        }
+
+        p:nth-of-type(2){
+            color: white;
+            font-family: "Space Grotesk";
+            font-size: 17px;
+            margin-top: 24px;
+        }
+    }
+}
+
+.Plans{
+    width: 100%;
+    height: 1096px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+    .Plans_Scam{
+        width: 100%;
+        height: 1096px;
+        position: absolute;
+
+        >img{
+            position: relative;
+            left: 94%;
+            top: 160px;
+        }
+    }
+
+    .Plans_workspace{
+        width: 1280px;
+        height: 968px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        >p:nth-of-type(1){
+            width: 77px;
+            height: 32px;
+            background-color: #DDF0A7;
+            border-radius: 64px;
+            font-family: "Space Grotesk";
+            font-size: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #162E3C;
+        }
+
+        >p:nth-of-type(2){
+            color: #162E3C;
+            font-family: "Fraunces";
+            font-size: 48px;
+            margin-top: 15px;
+        }
+
+        >p:nth-of-type(3){
+            color: #49616E;
+            font-family:"Space Grotesk";
+            font-size: 17px;
+            margin-top: 24px;
+        }
+    }
+}
+
+.Our_Blogs{
+    width: 100%;
+    height: 1288px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .OB_workspace{
+        width: 1280px;
+        height: 1032px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        >p:nth-of-type(1){
+            width: 59px;
+            height: 32px;
+            background-color: #DDF0A7;
+            border-radius: 64px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: "Space Grotesk";
+            font-size: 16px;
+            font-weight: bold;
+            color: #162E3C;
+        }
+
+        >p:nth-of-type(2){
+            font-family: "Fraunces";
+            font-size: 48px;
+            font-weight: bold;
+            color: #162E3C;
+            margin-top: 15px;
+        }
+
+        >p:nth-of-type(3){
+            font-family: "Space Grotesk";
+            font-size: 18px;
+            color: #49616E;
+            margin-top: 24px;
+        }
+
+        >button{
+            width: 109px;
+            height: 52px;
+            background: none;
+            border: #162E3C solid 2px;
+            font-family: "Space Grotesk";
+            font-size: 15px;
+            font-weight: bold;
+            border-radius: 64px;
+            margin-top: 20px;
+        }
+    }
+}
+
+.Email{
+    width: 100%;
+    height: 484px;
+    display: flex;
+    align-items: end;
+
+    .Email_line{
+        width: 100%;
+        height: 50%;
+        background-color: #162E3C;
+    }
+
+    .Email_field{
+        position: absolute;
+        width: 1280px;
+        height: 484px;
+        background-color: #DDF0A7;
+        border-radius: 48px;
+        left: 16%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .EF_scam{
+            position: absolute;
+            width: 1280px;
+            height: 484px;
+
+            >img{
+                position: relative;
+                left: 82%;
+            }
+        }
+
+        .Email_workspace{
+            width: 768px;
+            height: 293px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 3;
+
+            >p:nth-of-type(1){
+                font-family: "Fraunces";
+                font-size: 40px;
+                color: #162E3C;
+                text-align: center;
+            }
+
+            >p:nth-of-type(2){
+                font-family: "Space Grotesk";
+                font-size: 18px;
+                color: #162E3C;
+                text-align: center;
+            }
+
+            >p:nth-of-type(3){
+                font-family: "Space Grotesk";
+                font-size: 11px;
+                color: #162E3C;
+            }
+
+            >div{
+                width: 512px;
+                height: 52px;
+                display: flex;
+                justify-content: space-between;
+
+                input{
+                    width: 368px;
+                    height: 52px;
+                    border: none;
+                    border-radius: 24px;
+                    font-size: 18px;
+                    font-family: "Space Grotesk";
+                    font-weight: bold;
+                    color: #162E3C;
+                    padding-left: 42px;
+                    box-sizing: border-box;
+                }
+
+                button{
+                    width: 128px;
+                    height: 52px;
+                    background-color: #162E3C;
+                    border-radius: 64px;
+                    font-family: "Space Grotesk";
+                    font-weight: bold;
+                    font-size: 18px;
+                    color: white;
+                    border: none;
+                }
+            }
+        }
+    }
+}
+
+footer{
+    width: 100%;
+    height: 835px;
+    background-color: #162E3C;
+    display: flex;
+    justify-content: center;
+
+    .footer_workspace{
+        width: 1280px;
+        height: 100%;
+
+        .FW_link_space{
+            width: 100%;
+            height: 521px;
+            margin-top: 80px;
+            display: flex;
+
+            .FWLS_d1{
+                width: 500px;
+                height: 180px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: start;
+
+                p{
+                    font-family: "Space Grotesk";
+                    font-size: 13px;
+                    color: white;
+                }
+
+            }
+
+            .FWLS_d2{
+                width: 80px;
+                height: 521px;
+                margin-left: 114px;
+
+                p{
+                    color: white;
+                    font-family: "Space Grotesk";
+                    font-size: 15px;
+                }
+
+                >div{
+                    width: 100%;
+                    height: 481px;
+                    margin-top: 21px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+
+                a{
+                    text-decoration: none;
+                    color: white;
+                    font-family: "Space Grotesk";
+                    font-size: 14px;
+                    
+                }
+            }
+
+            .FWLS_d3{
+                width: 200px;
+                height: 114px;
+                margin-left: 186px;
+
+                p{
+                    font-family: "Space Grotesk";
+                    font-size: 15px;
+                    color: white;
+                }
+
+                >div{
+                    height: 74px;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    margin-top: 16px;
+
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        font-family: "Space Grotesk";
+                        font-size: 14px;
+                        width: 108px;
+                        height: 37px;
+                    }
+                }
+            }
+
+            .FWLS_d4{
+                width: 200px;
+                height: 225px;
+                margin-left: 32px;
+
+                p{
+                    font-family: "Space Grotesk";
+                    font-size: 15px;
+                    color: white;
+                }
+
+                >div{
+                    height: 185px;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    margin-top: 16px;
+
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        font-family: "Space Grotesk";
+                        font-size: 14px;
+                        width: 108px;
+                        height: 37px;
+                    }
+                }
+            }
+        }
+
+        .final_space{
+            width: 100%;
+            height: 75px;
+            border-top: #49616E 1px solid;
+            margin-top: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            p{
+                font-family: "Space Grotesk";
+                font-size: 14px;
+                color: white;
+            }
+
+            div{
+                width: 136px;
+                height: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                img{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
