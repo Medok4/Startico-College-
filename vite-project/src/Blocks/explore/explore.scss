@@ -875,7 +875,7 @@ header{
                 color: #162E3C;
             }
 
-            >div{
+            >form{
                 width: 512px;
                 height: 52px;
                 display: flex;
@@ -904,6 +904,7 @@ header{
                     font-size: 18px;
                     color: white;
                     border: none;
+                    cursor: pointer;
                 }
             }
         }

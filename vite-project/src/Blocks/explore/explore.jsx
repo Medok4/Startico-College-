@@ -26,12 +26,34 @@ import Logo_White from '../../assets/Logo_White.png'
 import final1 from '../../assets/final1.png'
 import final2 from '../../assets/final2.png'
 import final3 from '../../assets/final3.png'
+import axios from 'axios'
+import { useState } from 'react'
 
 export default function Explore(){
 
     function closeExplore(){
         document.getElementById('explore').style.display = 'none'
     }
+
+    const [email, setEmail] = useState('');
+
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+    
+    try {
+      const response = await axios.post('http://localhost:3001/api/email', {
+        email: email
+      });
+      
+    
+      setEmail('');
+    } catch (error) {
+      setMessage('Ошибка при сохранении email');
+      console.error('Error:', error);
+    }
+  };
+
 
     return(
         <>
@@ -241,10 +263,10 @@ export default function Explore(){
                     <div className='Email_workspace'>
                         <p>Stay up to date with the latest news from the Startup world!</p>
                         <p>Etiam volutpat ligula nec orci egestas, at porta massa tempor. Proin rutrum, purus in convallis pharetra, risus leo sagittis.</p>
-                        <div>
-                            <input type="email" placeholder='Enter your email'/>
-                            <button>Subscribe</button>
-                        </div>
+                        <form onSubmit={handleSubmit}>
+                            <input name="email" value={email} required onChange={(e) => setEmail(e.target.value)} type="email" placeholder='Enter your email'/>
+                            <button type='submit'>Subscribe</button>
+                        </form>
                         <p>By clicking Subscribe you're confirming that you agree with our Terms and Conditions.</p>
                     </div>
                 </div>
