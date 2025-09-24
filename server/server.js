@@ -45,5 +45,27 @@ app.get('/api/review', async (req, res) => {
     }
 });
 
+//Получение планов
+app.get('/api/plan', async (req, res) => {
+    try {
+        const result = await pool.query('SELECT * FROM planttb');
+        res.json(result.rows);
+    } catch (error) {
+        console.error('Ошибка:', error);
+        res.status(500).json({error: 'Ошибка сервера'});
+    }
+});
+
+//Получение блогов
+app.get('/api/blog', async (req, res) => {
+    try {
+        const result = await pool.query('SELECT * FROM blogtb');
+        res.json(result.rows);
+    } catch (error) {
+        console.error('Ошибка:', error);
+        res.status(500).json({error: 'Ошибка сервера'});
+    }
+});
+
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => console.log(`We are going through ${PORT} with this one!`))

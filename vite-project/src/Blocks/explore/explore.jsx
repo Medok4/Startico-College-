@@ -30,6 +30,8 @@ import axios from 'axios'
 import { useState } from 'react'
 import ReviewComp from '../../Components/Review'
 import { useEffect } from 'react'
+import Plan from '../../Components/Plan'
+import Blog from '../../Components/Blog'
 
 export default function Explore(){
 
@@ -39,6 +41,8 @@ export default function Explore(){
 
     const [email, setEmail] = useState('');
     const [data, setData] = useState([]);
+    const [plan, setPlan] = useState([]);
+    const [blog, setBlog] = useState([]);
 
 
     const handleSubmit = async (e) => {
@@ -59,8 +63,11 @@ export default function Explore(){
 
   useEffect(() => {
     fetchData();
+    fetchPlans();
+    fetchBlog();
   }, []);
 
+//   Получение отзывов
      const fetchData = async () => {
     try {
       const response = await axios.get('http://localhost:3001/api/review');
@@ -76,6 +83,26 @@ export default function Explore(){
       console.error('Error response:'); // Для отладки
     }
   };
+
+// Получение Планов
+    const fetchPlans = async () => {
+        try {
+            const response = await axios.get('http://localhost:3001/api/plan');
+            setPlan(response.data)
+        } catch (error) {
+            console.error('error response:');
+        }
+    }
+
+    // Получение блогов
+    const fetchBlog = async () => {
+        try {
+            const response = await axios.get('http://localhost:3001/api/blog');
+            setBlog(response.data)
+        } catch (error) {
+            console.error('error response:');
+        }
+    }
 
     return(
         <>
@@ -265,9 +292,17 @@ export default function Explore(){
                 </div>
 
                 <div className='Plans_workspace'>
+                    <div className='PTS'>
                     <p>Pricing</p>
                     <p>Pricing plans</p>
                     <p>Suspendisse mattis porttitor gravida et malesuada fames.</p>
+                    </div>
+
+                    <div className='Plans_from_back'>
+                        {plan.map(item => (
+                            <Plan key={item.id} item={item} />
+                        ))}
+                    </div>
                 </div>
             </section>
 
@@ -276,6 +311,13 @@ export default function Explore(){
                     <p>Blog</p>
                     <p>Our latest blogs</p>
                     <p>Accumsan semper euismod dolor vitae metus.</p>
+
+                    <div className='blog_workspace'>
+                        {blog.map(item => (
+                            <Blog key={item.id} item={item} />
+                        ))}
+                    </div>
+
                     <button>View all</button>
                 </div>
             </section>
