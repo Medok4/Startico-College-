@@ -28,6 +28,8 @@ import final2 from '../../assets/final2.png'
 import final3 from '../../assets/final3.png'
 import axios from 'axios'
 import { useState } from 'react'
+import ReviewComp from '../../Components/Review'
+import { useEffect } from 'react'
 
 export default function Explore(){
 
@@ -36,6 +38,7 @@ export default function Explore(){
     }
 
     const [email, setEmail] = useState('');
+    const [data, setData] = useState([]);
 
 
     const handleSubmit = async (e) => {
@@ -54,6 +57,25 @@ export default function Explore(){
     }
   };
 
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+     const fetchData = async () => {
+    try {
+      const response = await axios.get('http://localhost:3001/api/review');
+      
+      if (Array.isArray(response.data)) {
+        setData(response.data);
+      } else {
+        console.error('Ожидался массив, но получил:', typeof response.data);
+        setData([]); // Устанавливаем пустой массив в случае ошибки
+      }
+      
+    } catch (error) {
+      console.error('Error response:'); // Для отладки
+    }
+  };
 
     return(
         <>
@@ -228,6 +250,12 @@ export default function Explore(){
                 <div className='WFS_Delayed'>
                     <p>A words from our customers</p>
                     <p>Eu turpis vel, maximus condimentum turpis faucibus dictum accumsan.</p>
+
+                    <div className='WFSD_workspace'>
+                        {data.map(item => (
+                            <ReviewComp key={item.id} item={item} />
+                        ))}
+                    </div>
                 </div>
             </section>
 

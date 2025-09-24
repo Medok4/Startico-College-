@@ -34,5 +34,16 @@ app.post('/api/email', async (req, res) => {
     }
 });
 
+//Получение всех данных из таблицы отзывов
+app.get('/api/review', async (req, res) => {
+    try {
+        const result = await pool.query('SELECT * FROM reviewtb');
+        res.json(result.rows);
+    } catch (error) {
+        console.error('Ошибка:', error);
+        res.status(500).json({ error: 'Ошибка сервера'});
+    }
+});
+
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => console.log(`We are going through ${PORT} with this one!`))

@@ -684,18 +684,31 @@ header{
         display: flex;
         flex-direction: column;
         align-items: center;
+        z-index: 2;
 
-        p:nth-of-type(1){
+        >p:nth-of-type(1){
             color: white;
             font-size: 48px;
             font-family: "Fraunces";
+            overflow-y: hidden;
         }
 
-        p:nth-of-type(2){
+        >p:nth-of-type(2){
             color: white;
             font-family: "Space Grotesk";
             font-size: 17px;
             margin-top: 24px;
+            overflow-y: hidden;
+        }
+
+        .WFSD_workspace{
+            width: 1280px;
+            height: 960px;
+            margin-top: 80px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            align-items: center;
         }
     }
 }
